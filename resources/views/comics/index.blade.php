@@ -9,11 +9,11 @@
 </head>
 
 <body>
-
     @foreach ($comics as $comic)
-        <div><a href="{{ route('comics.show', $comic->id) }}"> {{ $comic->title }} </a> </div>
+        <div>
+            <a href="{{ route('comics.show', $comic->id) }}"> {{ $comic->title }} </a>
+        </div>
     @endforeach
-
 </body>
 
 </html>
