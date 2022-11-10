@@ -14,6 +14,14 @@
         <img src="{{ $comic->thumb }}" alt="{{ $comic->title }} cover">
     </div>
     <p>{{ $comic->description }}</p>
+
+    <p>{{ $comic->price }}</p>
+
+
+<div>
+    <a href="{{ route('comics.edit', $comic->id)}}">EDIT</a>
+</div>
+
 </body>
 
 </html>
